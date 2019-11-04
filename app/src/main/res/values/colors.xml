@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colors.senderbackground">#ffffff</color>
+    <color name="colors.recieverbackground">#e3e5e6</color>
+
+    <color name="colors.grey">#FCFCFC</color>
+    <color name="colors.logout">#ADB2B6</color>
+    <color name="colors.purple">#7c4ddf</color>
+    <color name="colors.yellow">#FFE74D</color>
+    <color name="colors.green">#24b08e</color>
+    <color name="colors.pink">#FF3F81</color>
+    <color name="colors.blue">#4262A4</color>
+    <color name="colors.orchid">#851881</color>
+    <color name="colors.teracota">#965F62</color>
+    <color name="colors.messages">#34484D</color>
+    <color name="colors.aquamarine">#24b08e</color>
+    <color name="colors.obelisk">#42A4DB</color>
+    <color name="colors.burg">#801600</color>
+    <color name="colors.malef">#F0F0F0</color>
+    <color name="colors.magnificent">#FE6C57</color>
+    <color name="colors.logolog">#E21773</color>
+    <color name="colors.underline">#F0F5FE</color>
+    <color name="colors.black">#949596</color>
+    <color name="colors.pureblack">#3C3C3C</color>
+    <color name="colors.pp">#949596</color>
+
+
+    <color name="mainthemecolor">#b8123e</color>
+</resources>

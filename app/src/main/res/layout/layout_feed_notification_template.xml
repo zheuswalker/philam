@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:orientation="vertical"
+    android:background="#FCFCFD"
+>
+<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    >
+<LinearLayout
+    android:layout_height="70dp"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    >
+
+<LinearLayout
+    android:gravity="center"
+android:id="@+id/notiflayout"
+    android:backgroundTint="#FCFCFD"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+
+>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="70dp"
+android:orientation="vertical">
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="70dp"
+android:orientation="horizontal">
+
+<LinearLayout
+    android:gravity="center_vertical"
+android:layout_width="wrap_content"
+android:layout_height="70dp"
+android:orientation="vertical"/>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="70dp"
+android:orientation="vertical"
+>
+
+<LinearLayout
+    android:gravity="center_vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:id="@+id/linearLayout">
+    <LinearLayout
+
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+<LinearLayout
+    android:layout_marginLeft="5dp"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+>
+<TextView
+
+    android:fontFamily="@font/opensansregular"
+android:layout_width="wrap_content"
+android:layout_height="match_parent"
+android:id="@+id/notifiername"
+android:text="assad"
+android:textColor="@color/mainthemecolor"
+android:textSize="12dp"
+android:layout_marginLeft="5dp"
+android:layout_marginTop="5dp"
+android:textStyle="bold"
+android:textAllCaps="true"
+/>
+<TextView
+    android:fontFamily="@font/opensansregular"
+android:textSize="11dp"
+android:layout_marginLeft="5dp"
+android:id="@+id/activitycontent"
+android:layout_width="wrap_content"
+android:layout_height="match_parent"
+android:text="Name liked your post"
+android:textColor="#000"/>
+
+</LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/followback"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:background="@color/colors.blue"
+            android:fontFamily="@font/opensansregular"
+            android:layout_marginRight="15dp"
+            android:text="Follow back"
+            android:textSize="8dp"
+            />
+    </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#C9C9C9"
+
+        ></LinearLayout>
+</LinearLayout>
+</LinearLayout>

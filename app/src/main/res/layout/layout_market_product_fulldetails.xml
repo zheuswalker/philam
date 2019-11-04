@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/fulldetailsscroll"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+            <ImageView
+                android:transitionName="transitimage"
+                android:id="@+id/market_product_view_prodimage"
+                android:layout_width="match_parent"
+                android:layout_height="420dp"
+                android:fadingEdgeLength="20dp"
+                android:scaleType="fitXY"
+                />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <LinearLayout
+                            android:layout_margin="10dp"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+                                android:id="@+id/market_product_view_name"
+                                android:layout_marginLeft="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="ProductName"
+                                android:textStyle="bold"
+                                android:textSize="20dp"
+                                android:textColor="#6c6b6b"
+                                />
+                            <TextView
+
+                                android:id="@+id/market_product_view_price"
+                                android:layout_marginLeft="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="0.00"
+                                android:textColor="#6c6b6b"
+                                />
+                            <TextView
+
+                                android:id="@+id/market_product_seller"
+                                android:layout_marginLeft="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="SELLER_ID"
+                                android:textColor="#6c6b6b"
+                                />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            <TextView
+                android:id="@+id/delivernow"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/mainthemecolor"
+                android:text="Buy Now"
+                android:textColor="#fff"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:fontFamily="@font/opensansregular"
+                android:textSize="15dp"
+                /> </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:textSize="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Product Description:"
+                android:textColor="#000"
+
+                />
+            <TextView
+
+
+                android:fontFamily="@font/opensansregular"
+                android:id="@+id/market_product_view_desc"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="..."
+                android:textColor="#6c6b6b"
+                />
+
+        </LinearLayout>
+        <!--<TextView-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:textSize="15dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="GIFT"-->
+            <!--android:textColor="#000"-->
+            <!--/>-->
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:clickable="true"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="10dp"-->
+            <!--app:cardBackgroundColor="@color/defaultwhite"-->
+            <!--app:cardCornerRadius="5dp"-->
+            <!--android:elevation="2dp"-->
+            <!--app:cardElevation="2dp"-->
+
+            <!--&gt;-->
+            <!--<LinearLayout-->
+                <!--android:layout_marginLeft="50dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:orientation="horizontal"-->
+                <!--&gt;-->
+        <!--<TextView-->
+
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:text="ADD TO CART"-->
+                    <!--android:textColor="#134796"-->
+
+                    <!--/>-->
+                <!--<TextView-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="right"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:text=">"-->
+                    <!--android:textSize="20dp"-->
+                    <!--android:textColor="#454444"-->
+                    <!--/>-->
+            <!--</LinearLayout>-->
+
+        <!--</android.support.v7.widget.CardView>-->
+        <!--<android.support.v7.widget.CardView-->
+
+            <!--android:clickable="true"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="10dp"-->
+            <!--app:cardBackgroundColor="@color/defaultwhite"-->
+            <!--app:cardCornerRadius="5dp"-->
+            <!--android:elevation="2dp"-->
+            <!--app:cardElevation="2dp"-->
+
+            <!--&gt;-->
+            <!--<LinearLayout-->
+                <!--android:layout_marginLeft="50dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:orientation="horizontal"-->
+                <!--&gt;-->
+
+                <!--<TextView-->
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:text="SEND NOW!"-->
+                    <!--android:textColor="#134796"-->
+
+                    <!--/>-->
+                <!--<TextView-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="right"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:text=">"-->
+                    <!--android:textSize="20dp"-->
+                    <!--android:textColor="#454444"-->
+                    <!--/>-->
+            <!--</LinearLayout>-->
+
+        <!--</android.support.v7.widget.CardView>-->
+        <!--<TextView-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:textSize="15dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="PAY WITH"-->
+            <!--android:textColor="#000"-->
+            <!--/>-->
+<!--<android.support.v7.widget.CardView-->
+
+    <!--android:clickable="true"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="10dp"-->
+    <!--app:cardBackgroundColor="@color/defaultwhite"-->
+    <!--app:cardCornerRadius="5dp"-->
+    <!--android:elevation="2dp"-->
+    <!--app:cardElevation="2dp"-->
+
+    <!--&gt;-->
+    <!--<LinearLayout-->
+        <!--android:layout_marginLeft="50dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--&gt;-->
+        <!--<ImageView-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:src="@drawable/mastercard"/>-->
+        <!--<TextView-->
+
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:text="MASTER CARD"-->
+            <!--android:textColor="#134796"-->
+
+            <!--/>-->
+    <!--<TextView-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="right"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:text=">"-->
+        <!--android:textSize="20dp"-->
+        <!--android:textColor="#454444"-->
+        <!--/>-->
+    <!--</LinearLayout>-->
+
+<!--</android.support.v7.widget.CardView>-->
+<!--<android.support.v7.widget.CardView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="10dp"-->
+        <!--app:cardBackgroundColor="@color/defaultwhite"-->
+        <!--app:cardCornerRadius="5dp"-->
+    <!--android:elevation="2dp"-->
+    <!--app:cardElevation="2dp"-->
+
+    <!--&gt;-->
+        <!--<LinearLayout-->
+            <!--android:layout_marginLeft="50dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:orientation="horizontal"-->
+            <!--&gt;-->
+            <!--<ImageView-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:src="@drawable/visa"/>-->
+            <!--<TextView-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:text="VISA"-->
+                <!--android:textColor="#134796"-->
+
+                <!--/>-->
+            <!--<TextView-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="right"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:text=">"-->
+                <!--android:textSize="20dp"-->
+                <!--android:textColor="#454444"-->
+                <!--/>-->
+        <!--</LinearLayout>-->
+
+    <!--</android.support.v7.widget.CardView>-->
+        <ImageView
+            android:id="@+id/backtop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="16dp" />
+
+    </LinearLayout>
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:elevation="0dp"
+            android:translationZ="0.1dp"
+            >
+            <android.support.v7.widget.Toolbar
+                android:theme="@style/ToolbarColoredBackArrow"
+                app:navigationIcon="?attr/homeAsUpIndicator"
+                android:id="@+id/back"
+                app:title=" "
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"/>
+
+        </android.support.design.widget.AppBarLayout>
+
+    </FrameLayout>
+</ScrollView>
