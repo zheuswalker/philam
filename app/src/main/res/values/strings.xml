@@ -1,3 +1,12 @@
 <resources>
+
     <string name="app_name">Philam</string>
+
+    // all of this
+    <string name="tittle">Welcome to Philam Life</string>
+    <string name="phone_email">\tHow would you like to be contacted?</string>
+    <string name="am_pm">\tWhen would you like to be contact?</string>
+    <string name="required">\t * Required field please do not leave blank.</string>
+    <string name="pass_var">\ I agree that all data above are correct </string>
+    <string name="varified">I authorized Philam life and its representatives to get in touch with me about their products and services.</string>
 </resources>

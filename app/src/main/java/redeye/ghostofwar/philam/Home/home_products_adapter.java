@@ -1,18 +1,11 @@
-package redeye.ghostofwar.philam;
+package redeye.ghostofwar.philam.Home;
 
-import android.app.AlertDialog;
-import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.os.AsyncTask;
-import android.preference.PreferenceManager;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -21,25 +14,29 @@ import android.widget.TextView;
 
 import java.util.List;
 
-public class feed_notification_content_adapter extends RecyclerView.Adapter<feed_notification_content_adapter.AllcurrentHolder>{
+import redeye.ghostofwar.philam.Configs.EndPoints;
+import redeye.ghostofwar.philam.R;
+import redeye.ghostofwar.philam.ServicesOffered.services_fulldetails;
+
+public class home_products_adapter extends RecyclerView.Adapter<home_products_adapter.AllcurrentHolder>{
 
     private Context context;
-    private List<feed_notification_required_settergetter> feed_notification_required_settergetter;
+    private List<home_services_content_constructors> home_services_content_constructors;
     public Integer count = 0;
     public  static String ipaddress;
 
-    public feed_notification_content_adapter(Context context, List<feed_notification_required_settergetter> feed_notification_required_settergetter)
+    public home_products_adapter(Context context, List<home_services_content_constructors> home_services_content_constructors)
     {
         this.context = context;
-        this.feed_notification_required_settergetter = feed_notification_required_settergetter;
-        ipaddress = EndPoints.BASE_URL;
+        this.home_services_content_constructors = home_services_content_constructors;
+
 
     }
 
     @Override
     public AllcurrentHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater layoutInflater = LayoutInflater.from(context);
-        View view = layoutInflater.inflate(R.layout.layout_feed_notification_template, null);
+        View view = layoutInflater.inflate(R.layout.layout_services_offered_template, null);
         AllcurrentHolder holder = new AllcurrentHolder(view);
         int width = parent.getMeasuredWidth();
         view.setMinimumWidth(width);
@@ -48,13 +45,13 @@ public class feed_notification_content_adapter extends RecyclerView.Adapter<feed
     @Override
     public void onBindViewHolder(final AllcurrentHolder holder, int position) {
 
-        final feed_notification_required_settergetter feed_required_settergetter = feed_notification_required_settergetter.get(position);
+        final home_services_content_constructors feed_required_settergetter = home_services_content_constructors.get(position);
         holder.notifiername.setText(feed_required_settergetter.pso_service_name());
         holder.activitycontent.setText(feed_required_settergetter.pso_service_desc());
         holder.notifiername.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context, ProductsOffered.class);
+                Intent intent = new Intent(context, services_fulldetails.class);
                 intent.putExtra("ProductName",holder.notifiername.getText());
                 context.startActivity(intent);
             }
@@ -64,7 +61,7 @@ public class feed_notification_content_adapter extends RecyclerView.Adapter<feed
     Integer rowindex = 0;
     @Override
     public int getItemCount() {
-        return feed_notification_required_settergetter.size();
+        return home_services_content_constructors.size();
     }
     public class AllcurrentHolder extends RecyclerView.ViewHolder{
 

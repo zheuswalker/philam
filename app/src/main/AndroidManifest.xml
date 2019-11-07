@@ -13,15 +13,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ProductsOffered"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".ServicesOffered.ProductsOffered"></activity>
+        <activity android:name=".Landing.philam_menu"></activity>
+        <activity android:name=".Landing.password_confirm" />
+        <activity android:name=".Landing.forgot_password" />
+        <activity android:name=".Landing.login" />
+        <activity android:name=".Landing.signup" />
+        <activity android:name=".Landing.chooser">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".market_product_fulldetails"></activity>
+
+        <activity android:name=".Activity.overall_home_activity">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity android:name=".ServicesOffered.services_fulldetails"></activity>
     </application>
 
 </manifest>

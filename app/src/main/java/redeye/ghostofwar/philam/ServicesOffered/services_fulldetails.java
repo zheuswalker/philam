@@ -1,8 +1,7 @@
-package redeye.ghostofwar.philam;
+package redeye.ghostofwar.philam.ServicesOffered;
 
 import android.app.AlertDialog;
 import android.content.Context;
-import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -12,7 +11,6 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 
 import org.json.JSONArray;
@@ -30,13 +28,13 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
-import java.text.NumberFormat;
-import java.util.Locale;
 
 import javax.net.ssl.HttpsURLConnection;
 
+import redeye.ghostofwar.philam.R;
 
-public class market_product_fulldetails extends AppCompatActivity {
+
+public class services_fulldetails extends AppCompatActivity {
     String prodname;
 
     public static Context context;
@@ -47,7 +45,7 @@ public class market_product_fulldetails extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_market_product_fulldetails);
+        setContentView(R.layout.layout_product_fulldetails);
             prodname = getIntent().getStringExtra("ProductName");
             prodname = prodname.substring(prodname.lastIndexOf(":") + 1);
             prodnamet = findViewById(R.id.market_product_view_name);

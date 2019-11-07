@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape   xmlns:android="http://schemas.android.com/apk/res/android">
+<solid android:color="@color/whitegrey"></solid>
+    <solid android:color="@color/motif"></solid>
+<size android:width="@dimen/cardview_default_radius" android:height="@dimen/cardview_default_radius"></size>
+<corners android:bottomLeftRadius="1dp" android:bottomRightRadius="1dp"></corners>
+</shape>

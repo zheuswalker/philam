@@ -1,29 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
-    <FrameLayout
+    android:orientation="vertical"
 
-        android:layout_marginBottom="60dp"
-        android:id="@+id/frame_container"
+    android:layout_height="match_parent"
+    tools:context=".Landing.chooser">
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        >
+        <LinearLayout
+            android:id="@+id/topheader"
+            android:orientation="vertical"
+            android:background="@drawable/header"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            >
 
-    <android.support.design.widget.BottomNavigationView
-        android:layout_marginBottom="-5dp"
-        android:id="@+id/navigation"
-        android:layout_width="match_parent"
-        android:paddingTop="10dp"
-        android:layout_height="wrap_content"
-        android:foreground="?attr/selectableItemBackground"
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-black"
+            android:text="Log In"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:textStyle="bold"></TextView>
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+
+
+            >
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginEnd="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="300dp"
+                android:elevation="5dp"
+                app:cardCornerRadius="15dp">
+
+
+                <EditText
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/username"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="User Name"></EditText>
+
+                <EditText
+                    android:layout_marginTop="60dp"
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    android:hint="password"
+                    android:layout_marginBottom="15dp"></EditText>
+
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+    <ImageView
+
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/circle"
+        android:layout_marginTop="80dp"
         android:layout_alignParentBottom="true"
-        app:itemIconTint="@drawable/selector"
-        app:itemTextColor="@color/colors.aquamarine"
-        app:menu="@menu/feednavigation" />
+        android:layout_marginLeft="-100dp"
+        android:layout_marginBottom="50dp"
+
+        ></ImageView>
+
+
+    <ImageView
+
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/circle"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="-60dp"
+
+        ></ImageView>
+
+    <ImageView
+
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/circle"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-50dp"
+        android:layout_marginRight="40dp"
+
+        ></ImageView>
+
+
+
+
+
 </RelativeLayout>

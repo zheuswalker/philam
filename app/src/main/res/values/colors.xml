@@ -27,7 +27,29 @@
     <color name="colors.black">#949596</color>
     <color name="colors.pureblack">#3C3C3C</color>
     <color name="colors.pp">#949596</color>
+    <color name="colors.comp">#0D0C63</color>
 
 
     <color name="mainthemecolor">#b8123e</color>
+
+    <color name="blue">#638bd4</color>
+    <color name="purple">#dc74e8</color>
+
+    <color name="black">#000000</color>
+    <color name="ccblue">#CC1859CF</color>
+    <color name="ccpurple">#CCD63BE9</color>
+
+    <color name="ssblue">#6E9DF3</color>
+    <color name="motif">#b8123e</color>
+
+    <color name="sspurple">#ED97F8</color>
+
+    <color name = "whitegrey">#72E6DED5</color>
+    <color name="grey">#F2615656</color>
+
+    <color name = "maroon">#D82727</color>
+    <color name = "maroonlight">#CCD82727</color>
+
+    <color name = "darkblue">#164551</color>
+    <color name = "lightblue">#CC164551</color>
 </resources>

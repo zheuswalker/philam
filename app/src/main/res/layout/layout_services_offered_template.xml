@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:orientation="vertical"
+    android:background="#FCFCFD"
+>
+<android.support.v7.widget.CardView
+    android:id="@+id/serviceview"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/circlet_services"
+    >
+
+    <LinearLayout
+
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/serviceicon"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp" />
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="0dp"
+        android:layout_weight="10"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+
+            android:fontFamily="@font/opensansregular"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/notifiername"
+            android:text="assad"
+            android:textColor="@color/colors.comp"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            />
+        <TextView
+            android:fontFamily="@font/opensansregular"
+            android:textSize="11dp"
+            android:id="@+id/activitycontent"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Name liked your post"
+            android:textColor="#000"/>
+
+    </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+</LinearLayout>

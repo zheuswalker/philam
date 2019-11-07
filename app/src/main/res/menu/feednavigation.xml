@@ -9,13 +9,13 @@
         android:id="@+id/feed_navigation_home"
 
         android:icon="@drawable/asset_feed_home"
-        android:title="Home" />
+        android:title="" />
 
     <item
         android:id="@+id/feed_navigation_notif"
 
         android:icon="@drawable/asset_feed_deposit"
-        android:title="Deposit"
+        android:title=""
 
         />
 
@@ -24,17 +24,17 @@
         android:id="@+id/feed_navigation_create"
 
         android:icon="@drawable/asset_feed_pay"
-        android:title="Billing"
+        android:title=""
          />
 
     <item
         android:id="@+id/feed_navigation_search"
         android:icon="@drawable/asset_feed_call"
-        android:title="Support" />
+        android:title="" />
 
     <item
 
         android:id="@+id/feed_navigation_profile"
         android:icon="@drawable/asset_feed_profile"
-        android:title="Profile" />
+        android:title="" />
 </menu>
